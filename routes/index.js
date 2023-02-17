@@ -6,7 +6,7 @@ router.post('/', async function(req, res) {
 
     console.log(req.body);
 
-    await axios.post('https://discord.com/api/webhooks/1076158509688836217/cZicRjFKaeBdps-NfiuW_BgjzKq-_qqXbVXiHDQZc4wOBqnAmEUv5UHcs0hZkgPXoPKT',
+    await axios.post(process.env.WEBHOOK,
     req.body
     )
 
